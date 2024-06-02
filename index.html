@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <title>Nice起始页</title>
+    <style>
+        @font-face {
+            font-family: 'ChillRoundF';
+            src: url('https://nicehello.github.io/ChillRoundF.ttf') format('truetype');
+        }
+
+        body {
+            font-family: 'ChillRoundF', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #8EC5FC; /* 背景颜色改为 #8EC5FC */
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            padding-top: 50px;
+            text-align: center;
+            color: white; /* 文字颜色，根据背景色调整 */
+        }
+        h1 {
+            font-family: 'ChillRoundF', Arial, sans-serif; /* 使用ChillRoundF字体 */
+            color: #007bff; /* 标题颜色 */
+        }
+        input[type="text"] {
+            width: 60%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin-top: 20px;
+            font-size: 16px;
+            display: block;
+            margin: 0 auto; /* 水平居中 */
+        }
+        input[type="submit"] {
+            background-color: #007bff; /* 按钮背景色 */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-left: 10px;
+        }
+        input[type="submit"]:hover {
+            background-color: #0056b3; /* 鼠标悬停时的背景色 */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Nice起始页</h1>
+        <form action="https://www.bing.com/search" method="GET">
+            <input type="text" name="q" placeholder="在必应搜索" required>
+            <input type="submit" value="搜索">
+        </form>
+    </div>
+</body>
+</html>
